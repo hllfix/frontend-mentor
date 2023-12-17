@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --clr-primary-soft-blue: hsl(215, 51%, 70%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+
+
+    --clr-neutral-very-dark-blue-main: hsl(217, 54%, 11%);
+    --clr-neutral-very-dark-blue-card: hsl(216, 50%, 16%);
+    --clr-neutral-very-dark-blue-line: hsl(215, 32%, 27%);
+    -clr-white: #fff;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600:600;
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--clr-neutral-very-dark-blue-main);
+}
+
+#card {
+    background-color: var(--clr-neutral-very-dark-blue-card);
+    width: 320px;
+    height: 540px;
+    border-radius: 20px;
+    margin: 7rem auto;
+    padding-top: 1.5rem;
+}
+
+.img__card {
+    width: 85%;
+    height: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: url(images/image-equilibrium.jpg) no-repeat center center/cover;
+}
+
+.text__card {
+    padding: 1rem;
+    
+}
+
+.text__card h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: var(--fw-600);
+    transition: color .2s ease-in;
+}
+
+.text__card h1:hover {
+    color: var(--clr-primary-cyan);
+ 
+}
+.text__card p {
+    color: var(--clr-primary-soft-blue);
+    font-weight: var(--fw-400);
+    padding-bottom: 1rem;
+}
+.money__time__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.6rem;
+}
+
+.ethereum__info {
+    display: flex;
+}
+
+.time__info {
+    display: flex;
+}
+.money__text {
+    color: var(--clr-primary-cyan);
+    font-weight: var(--fw-600);
+    padding-left: 0.5rem;
+
+}
+
+.time__text {
+    color: var(--clr-primary-soft-blue);
+    padding-left: 0.5rem;
+    
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color:var(--clr-primary-soft-blue);
+    margin: 0 auto;
+    opacity: 0.3;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    
+}
+.avatar img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.avatar p {
+    color: var(--clr-primary-soft-blue);
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.white-text {
+    color: #fff;
+    transition: color .2s ease-in;
+}
+
+.white-text:hover {
+    color: var(--clr-primary-cyan); 
+}
+
+.blue-img-hover {
+    background: linear-gradient(rgba(0,255,247,.6),rgba(0,255,247,.6)),
+     url(images/image-equilibrium.jpg) no-repeat center center/cover;
+     cursor: pointer;
+}
+
+.eye-icon.block {
+    display: block;
+}
+
+.eye-icon {
+    text-align: center;
+    padding-top: 7rem;
+    display: none;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    #card {
+        width: 95%;
+        margin: 2rem auto;
+    }
+}
+
+
+
+
+
