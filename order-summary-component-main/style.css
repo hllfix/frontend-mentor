@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
-
 :root {
     --clr-primary-pale-blue:hsl(225, 100%, 94%);
     --clr-primary-bright-blue: hsl(245, 75%, 52%);
@@ -12,9 +13,174 @@
     --clr-desaturated-blue: hsl(224, 23%, 55%);
     --clr-dark-blue:  hsl(223, 47%, 23%);
 
-
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
 }
 
-body, p {
+body {
     font-size: 16px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #E0E8FF ;
 }
+.order-summary-card-container {
+    width: 450px;
+    height: 697px;
+    margin: 4rem auto;
+}
+
+h3 {
+    color: #1f2e55;
+    font-size: 28px;
+    padding-bottom: .8rem;
+    font-weight: var(--fw-900);
+}
+
+p {
+    color: #717fa6;
+    font-weight: var(--fw-500);
+    line-height: 26px;
+    padding-bottom: .8rem;
+}
+
+.order-summary-image {
+    width: 100%;
+    height: 30%;
+    background-image: url(images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+}
+
+.order-summary-info-container {
+    background-color: #fff ;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    padding: 3rem;
+    padding-top: 2rem;
+}
+
+.annual-plan-container {
+    background-color: var(--clr-neutral-very-pale-blue);
+    border-radius: 11px;
+    width: 354px;
+    height: 80px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.change-link a {
+    color: #382ee1;
+    transition: all .1s ease-in;
+}
+
+.change-link a:hover {
+    color: #766cf1;
+    text-decoration: none;
+}
+.music-icon {
+    padding-right: 1rem;
+}
+.annual-plan-price {
+    padding-right: 5rem;
+}
+
+.annual-plan-price h4 {
+    color: #1f2e55;
+    font-weight: var(--fw-900);
+}
+.price {
+    color: #717fa6;
+    font-weight: var(--fw-500);
+}
+
+.payment-btn {
+    margin: 1rem 0;
+    border-radius: 10px;
+    width: 354px;
+    height: 50px;
+    color: #fff;
+    background-color: #382ee1;
+    border: none;
+    font-weight: var(--fw-900);
+    cursor: pointer;
+    transition: background .2s ease-in;
+ 
+}
+
+.payment-btn:hover {
+    background-color: #766cf1;
+    
+} 
+
+.cancel-orderl-link a {
+    text-decoration: none;
+    font-weight: var(--fw-900);
+    transition: color .2s ease-in;
+    color: #717fa6;
+}
+.cancel-orderl-link a:hover {
+    color: #1f2e55;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+
+    .order-summary-info-container {
+        padding: 2rem;
+        padding-top:2rem;
+    }
+    .order-summary-card-container {
+        width: 90%;  
+    }
+
+    .annual-plan-container {
+        width: 100%;
+        
+    }
+    .annual-plan-price h4 {
+        font-size: 13px;
+    }
+
+    .annual-plan-price {
+        padding-right: 3rem;
+    }
+    .payment-btn  {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    
+
+@media screen and (max-width: 281px) {
+
+    .annual-plan-price h4 {
+        font-size: 10px;
+    }
+
+    .annual-plan-price {
+        padding-right: 1rem;
+    }
+    .change-link {
+        font-size: 10px;
+    }
+    .price {
+        font-size: 11px;
+    }
+
+
+}
+   
+
+
+
+}
+
+  
