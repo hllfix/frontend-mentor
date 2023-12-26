@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MyFont;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+    font-size: 1rem;
+    background-color: hsl(235, 18%, 26%);
+}
+
+.card {
+    display: flex;
+    width: 850px;
+    height: 515px;
+    margin: 8rem auto;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.left {
+    padding: 4rem;
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+
+
+.right img {
+    padding: 1rem 1rem 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+       
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+
+ul {
+    
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    list-style-image: url(assets/images/icon-success.svg);
+}
+
+input {
+    padding:.8rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+label {
+    font-size: 10px;
+    font-weight: 700;
+
+}
+
+button {
+    padding: .8rem;
+    border-radius: 5px;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+
+}
+
+.card-2 {
+    background-color: #fff;
+    width: 400px;
+    height: 390px;
+    margin: 5rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.email-company {
+    font-weight: bold;
+}
+
+.content {
+    margin: 1.5rem;
+}
+
+.content img {
+    width: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-2 p {
+   line-height: 1.2rem;
+   font-size: 14px;
+   margin-bottom: 2rem;
+
+}
+
+.card-2 h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.card-2 button {
+    width: 100%;
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    font-weight: 700;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 391px) {
+    .card {
+        
+        width: 90%;
+  
+        flex-direction: column-reverse;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+
+    .left {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .right {
+        
+        width: 100%;
+    }
+
+    form {
+
+        width: 90%;
+    }
+
+}
